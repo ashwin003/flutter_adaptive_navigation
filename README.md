@@ -4,10 +4,6 @@ A flutter package that simplifies the process of adding adaptive navigation to y
 
 It uses bottom navigation bar for mobile phones, navigation rail for tablets, and drawers for desktop size screens.
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
 ## Getting started
 
 Import the package:
@@ -19,9 +15,6 @@ import 'package:flutter_adaptive_navigation/flutter_adaptive_navigation.dart';
 Use the `FlutterAdaptiveNavigationScaffold` instead of the regular `Scaffold`.
 
 ## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
 
 ```dart
 FlutterAdaptiveNavigationScaffold(
