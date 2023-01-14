@@ -39,7 +39,7 @@ class FlutterAdaptiveNavigationScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return ViewModelBuilder<ShellViewModel>.reactive(
       viewModelBuilder: () => shellViewModel,
-      onModelReady: (viewModel) {
+      onViewModelReady: (viewModel) {
         viewModel.labelDisplayType = labelDisplayType;
       },
       builder: (context, viewModel, child) {
