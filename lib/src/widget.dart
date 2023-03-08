@@ -43,16 +43,16 @@ class FlutterAdaptiveNavigationScaffold extends StatelessWidget {
         viewModel.labelDisplayType = labelDisplayType;
       },
       builder: (context, viewModel, child) {
-        return ScreenTypeLayout(
-          mobile: MobileView(
+        return ScreenTypeLayout.builder(
+          mobile: (ctx) => MobileView(
             viewModel: viewModel,
             appBar: appBar,
           ),
-          tablet: TabletView(
+          tablet: (ctx) => TabletView(
             viewModel: viewModel,
             appBar: appBar,
           ),
-          desktop: DesktopView(
+          desktop: (ctx) => DesktopView(
             viewModel: viewModel,
             appBar: appBar,
             drawerWidthFraction: drawerWidthFraction,

@@ -1,6 +1,6 @@
 name: flutter_adaptive_navigation
 description: A flutter package that simplifies the process of adding adaptive navigation to your apps. 
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/ashwin003/flutter_adaptive_navigation
 repository: https://github.com/ashwin003/flutter_adaptive_navigation
 issue_tracker: https://github.com/ashwin003/flutter_adaptive_navigation/issues
