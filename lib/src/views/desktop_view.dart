@@ -6,11 +6,13 @@ class DesktopView extends StatelessWidget {
   final ShellViewModel viewModel;
   final PreferredSizeWidget? appBar;
   final double drawerWidthFraction;
+  final Color? backgroundColor;
   const DesktopView({
     super.key,
     required this.viewModel,
     this.appBar,
     required this.drawerWidthFraction,
+    this.backgroundColor,
   });
 
   @override
@@ -46,8 +48,9 @@ class DesktopView extends StatelessWidget {
   }
 
   Widget _buildDrawer(double width) {
-    return SizedBox(
+    return Container(
       width: width,
+      color: backgroundColor,
       child: _buildListView(),
     );
   }

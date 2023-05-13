@@ -13,3 +13,7 @@
 # 0.0.4
 
 * Performance improvements
+
+# 0.0.5
+
+* Adds optional background color parameter for the navigation element

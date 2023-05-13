@@ -6,10 +6,12 @@ import '../types/shell_view_model.dart';
 class TabletView extends StatelessWidget {
   final ShellViewModel viewModel;
   final PreferredSizeWidget? appBar;
+  final Color? backgroundColor;
   const TabletView({
     super.key,
     required this.viewModel,
     this.appBar,
+    this.backgroundColor,
   });
 
   @override
@@ -40,6 +42,7 @@ class TabletView extends StatelessWidget {
       selectedIndex: viewModel.selectedDestination,
       onDestinationSelected: (value) => viewModel.selectedDestination = value,
       labelType: _prepareLabelType(),
+      backgroundColor: backgroundColor,
     );
   }
 

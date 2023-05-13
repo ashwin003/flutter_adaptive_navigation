@@ -69,6 +69,7 @@ FlutterAdaptiveNavigationScaffold(
           ),
         ),
       ], // Required. The list of destinations for the navigation in the app. Should have atleast 1 element.
+      backgroundColor: Colors.white, // Optional. The background color for the navigation element
     );
 ```
 

@@ -19,6 +19,9 @@ class FlutterAdaptiveNavigationScaffold extends StatelessWidget {
   /// Optional. Defines the widget to be used as the appBar.
   final PreferredSizeWidget? appBar;
 
+  /// Optional. Defines the background color of the navigation element.
+  final Color? backgroundColor;
+
   /// Optional. Determines the width of the drawer in terms of percentage of the viewport width. Default: 20%.
   /// Should be expressed as a fraction (between 0 and 1)
   final double drawerWidthFraction;
@@ -28,6 +31,7 @@ class FlutterAdaptiveNavigationScaffold extends StatelessWidget {
     this.appBar,
     this.drawerWidthFraction = 0.2,
     this.labelDisplayType = LabelDisplayType.selected,
+    this.backgroundColor,
   })  : assert(0 < drawerWidthFraction && drawerWidthFraction < 1),
         assert(destinations.length > 1);
 

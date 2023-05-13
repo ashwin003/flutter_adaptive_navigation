@@ -6,10 +6,12 @@ import '../types/shell_view_model.dart';
 class MobileView extends StatelessWidget {
   final ShellViewModel viewModel;
   final PreferredSizeWidget? appBar;
+  final Color? backgroundColor;
   const MobileView({
     super.key,
     required this.viewModel,
     this.appBar,
+    this.backgroundColor,
   });
 
   @override
@@ -23,6 +25,7 @@ class MobileView extends StatelessWidget {
 
   BottomNavigationBar _prepareBottomNavigationBar(BuildContext context) {
     return BottomNavigationBar(
+      backgroundColor: backgroundColor,
       currentIndex: viewModel.selectedDestination,
       onTap: (value) => viewModel.selectedDestination = value,
       showSelectedLabels: viewModel.showSelectedLabel,
