@@ -17,3 +17,7 @@
 # 0.0.5
 
 * Adds optional background color parameter for the navigation element
+
+# 0.0.6
+
+* Minor updates
