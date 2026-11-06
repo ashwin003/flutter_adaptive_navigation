@@ -15,16 +15,11 @@ class NavigationElement extends NavigationDestination {
     super.key,
     this.builder,
     this.breakpointBasedBuilder,
-    required Widget icon,
-    required String label,
-    Widget? selectedIcon,
-    String? tooltip,
-  }) : super(
-          icon: icon,
-          label: label,
-          selectedIcon: selectedIcon,
-          tooltip: tooltip,
-        );
+    required super.icon,
+    required super.label,
+    super.selectedIcon,
+    super.tooltip,
+  });
 
   Widget getBody(Breakpoint breakpoint) {
     if (breakpointBasedBuilder?.containsKey(breakpoint) ?? false) {
